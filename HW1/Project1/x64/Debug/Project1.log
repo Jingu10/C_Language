@@ -1,0 +1,4 @@
+﻿  Calculator.c
+C:\Users\dmdkv\OneDrive\바탕 화면\C_Project\HW1\Project1\Calculator.c(46,10): warning C4013: 'atoi'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\dmdkv\OneDrive\바탕 화면\C_Project\HW1\Project1\Calculator.c(102,13): warning C4013: 'strtol'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  Project1.vcxproj -> C:\Users\dmdkv\OneDrive\바탕 화면\C_Project\HW1\x64\Debug\Project1.exe
