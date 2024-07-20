@@ -1,10 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dmdkv\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\C_Project\\HW1\\",
+  "WorkspaceRootPath": "C:\\Users\\dmdkv\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\C_Project\\C_Language\\HW1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{22E02CD6-C1C2-4276-AF7F-ACD3A70E71B0}|Project1\\Project1.vcxproj|C:\\Users\\dmdkv\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\C_Project\\HW1\\Project1\\Calculator.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{22E02CD6-C1C2-4276-AF7F-ACD3A70E71B0}|Project1\\Project1.vcxproj|C:\\Users\\dmdkv\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\C_Project\\C_Language\\HW1\\Project1\\Calculator.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{22E02CD6-C1C2-4276-AF7F-ACD3A70E71B0}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Calculator.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22E02CD6-C1C2-4276-AF7F-ACD3A70E71B0}|Project1\\Project1.vcxproj|C:\\PROGRAM FILES (X86)\\WINDOWS KITS\\10\\INCLUDE\\10.0.22621.0\\UCRT\\STDIO.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,13 +23,27 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Calculator.c",
-              "DocumentMoniker": "C:\\Users\\dmdkv\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\C_Project\\HW1\\Project1\\Calculator.c",
+              "DocumentMoniker": "C:\\Users\\dmdkv\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\C_Project\\C_Language\\HW1\\Project1\\Calculator.c",
               "RelativeDocumentMoniker": "Project1\\Calculator.c",
-              "ToolTip": "C:\\Users\\dmdkv\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\C_Project\\HW1\\Project1\\Calculator.c",
+              "ToolTip": "C:\\Users\\dmdkv\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\C_Project\\C_Language\\HW1\\Project1\\Calculator.c",
               "RelativeToolTip": "Project1\\Calculator.c",
-              "ViewState": "AQIAABAAAAAAAAAAAAAIwBYAAAAtAAAA",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAACkAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-07-20T08:29:38.934Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "stdio.h",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "ToolTip": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "ViewState": "AQIAAEEEAAAAAAAAAAAIwEcEAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-20T13:36:03.428Z",
               "EditorCaption": ""
             }
           ]
