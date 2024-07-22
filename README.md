@@ -382,12 +382,31 @@ void divide(long long a, long long b, long long* quotient, long long* remainder)
 	*quotient = 0;
 	*remainder = 0;
 
-  for (int i = 63; i >= 0; i--) {
-      if ((ua >> i) >= ub) {
-          ua = subtract(ua, ub << i);
-          *quotient = add(*quotient, 1LL << i);
-      }
-  }
+
+	/* 너무 느린 방식
+	while (ua >= ub) {
+		ua = subtract(ua, ub);
+		(*quotient)++;
+	}
+	*/
+
+	long long temp_ub = ub;
+	long long multiple = 1;
+
+	// ub를 가능한 크게 만들어줌
+	while ((temp_ub << 1) <= ua) {
+		temp_ub <<= 1;
+		multiple <<= 1;
+	}
+
+	while (ua >= ub) {
+		if (ua >= temp_ub) {
+			ua = subtract(ua, temp_ub);
+			*quotient = add(*quotient, multiple);
+		}
+		temp_ub >>= 1;
+		multiple >>= 1;
+	}
 
 	*remainder = ua;
 
