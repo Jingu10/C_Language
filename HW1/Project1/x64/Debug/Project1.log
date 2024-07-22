@@ -1,3 +1,4 @@
 ﻿  Calculator.c
-C:\Users\dmdkv\OneDrive\바탕 화면\C_Project\C_Language\HW1\Project1\Calculator.c(221,18): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\dmdkv\OneDrive\바탕 화면\C_Project\C_Language\HW1\Project1\Calculator.c(230,24): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\dmdkv\OneDrive\바탕 화면\C_Project\C_Language\HW1\Project1\Calculator.c(236,10): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
   Project1.vcxproj -> C:\Users\dmdkv\OneDrive\바탕 화면\C_Project\C_Language\HW1\x64\Debug\Project1.exe

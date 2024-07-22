@@ -3,7 +3,7 @@
 #include <limits.h>
 #include <stdlib.h>
 
-void printIntro(); 
+void print_intro(); 
 void remove_spaces(char*);  
 int parse_input(const char*, char*, char*, char*); 
 int is_valid_integer(const char*);
@@ -17,7 +17,7 @@ void divide(long long, long long, long long*, long long*);
 
 int main() {
 
-	printIntro();
+	print_intro();
 
 	char input[30]; 
 	char num1_str[12], num2_str[12]; // 음수일 수도 있음 
@@ -76,15 +76,15 @@ int main() {
 
 			case '+':
 				result = add(num1, num2);
-				printf("Result: %lld", result);
+				printf("Result: %lld\n", result);
 				break;
 			case '-':
 				result = subtract(num1, num2);
-				printf("Result: %lld", result);
+				printf("Result: %lld\n", result);
 				break;
 			case '*':
 				result = multiply(num1, num2);
-				printf("Result: %lld", result);
+				printf("Result: %lld\n", result);
 				break;
 			case '/':
 				if (num2 == 0) {
@@ -104,7 +104,7 @@ int main() {
 	return 0;
 }
 
-void printIntro() {
+void print_intro() {
 	printf("This calculator only accepts integer numbers between -2,147,483,648 ~ 2,147,483,647 as input.\n");
 	printf("Please follow the input format below.\n");
 	printf("Format: <Integer><Operation><Integer>\nExample: 4+3\n");
@@ -161,7 +161,7 @@ int parse_input(const char* input, char* num1_str, char* operator, char* num2_st
 // 문자열이 유효한 정수인지 확인하는 함수
 int is_valid_integer(const char* str) {
 	char* endptr;
-	long num = strtol(str, &endptr, 11);
+	long num = strtol(str, &endptr, 10);
 
 	if (*endptr != '\0' || endptr == str) {
 		return 0; // 변환할 수 없는 문자가 있거나 변환할 수 있는 문자가 없음
@@ -215,14 +215,33 @@ void divide(long long a, long long b, long long* quotient, long long* remainder)
 	*quotient = 0;
 	*remainder = 0;
 
-	for (int i = 63; i >= 0; i--) {
-		*remainder <<= 1;
-		*remainder |= (ua >> i) & 1;
-		if (*remainder >= ub) {
-			*remainder = subtract(*remainder, ub);
-			*quotient |= 1ULL << i;
-		}
+
+	/* 너무 느린 방식
+	while (ua >= ub) {
+		ua = subtract(ua, ub);
+		(*quotient)++;
 	}
+	*/
+
+	long long temp_ub = ub;
+	long long multiple = 1;
+
+	// ub를 가능한 크게 만들어줌
+	while ((temp_ub << 1) <= ua) {
+		temp_ub <<= 1;
+		multiple <<= 1;
+	}
+
+	while (ua >= ub) {
+		if (ua >= temp_ub) {
+			ua = subtract(ua, temp_ub);
+			*quotient = add(*quotient, multiple);
+		}
+		temp_ub >>= 1;
+		multiple >>= 1;
+	}
+
+	*remainder = ua;
 
 	*quotient *= sign_q;
 	*remainder *= sign_r;
