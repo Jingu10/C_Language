@@ -1,3 +1,5 @@
+### 전체코드
+
 ```c
 #include <stdio.h>
 #include <ctype.h> // isdigit, isspace
