@@ -1,0 +1,3 @@
+﻿  Calculator.c
+C:\Users\dmdkv\source\repos\HW2\HW2\Calculator.c(47,7): warning C4101: 'result' :참조되지 않은 지역 변수입니다.
+  HW2.vcxproj -> C:\Users\dmdkv\source\repos\HW2\HW2\Debug\HW2.exe

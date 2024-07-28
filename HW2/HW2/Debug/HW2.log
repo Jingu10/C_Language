@@ -1,0 +1,4 @@
+﻿  Calculator.c
+C:\Users\dmdkv\source\repos\HW2\HW2\Calculator.c(165,9): warning C4090: '=': 'const' 한정자가 서로 다릅니다.
+C:\Users\dmdkv\source\repos\HW2\HW2\Calculator.c(189,9): warning C4090: '=': 'const' 한정자가 서로 다릅니다.
+  HW2.vcxproj -> C:\Users\dmdkv\source\repos\HW2\Debug\HW2.exe
